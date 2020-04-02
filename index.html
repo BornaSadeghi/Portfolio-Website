@@ -1,63 +1,82 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <title>Borna Sadeghi</title>
 </head>
-
 <body>
-    <div class="container">
-        <div class="nav-wrapper">
-            
-            <div class="left-side">
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="index.html">Home</a>
+    
+    <h1 align="center">Borna Sadeghi</h1>
+    
+    <h2 align="center">Check out my projects!</h2>
+    
+    <div class="portfolio-grid">
+        
+        <div class="project-wrapper">
+            <div class="project-img" style="background-image:url(images/cheese.jpg);">
+                <div align="center" class="project-label">
+                    Spooki Chess Engine
                 </div>
-                <div class="nav-link-wrapper">
-                    <a href="about.html">About</a>
+
+                <div align="center" class="project-summary">
+                    A chess engine built from scratch in Java.
                 </div>
             </div>
-            
-            <div class="right-side">
-                <div class="brand">
-                    <div>Borna Sadeghi</div>
-                </div>
-            </div>
-            
         </div>
+        
+        <div class="project-wrapper">
+            <div class="project-img" style="background-image:url(images/demo.jpg);">
+                <div align="center" class="project-label">
+                    Greenhat
+                </div>
+
+                <div align="center" class="project-summary">
+                    An app that informs users about making greener consumer choices at the scan of a barcode.
+                </div>
+            </div>
+        </div>
+
+        <div class="project-wrapper">
+            <div class="project-img" style="background-image:url(images/bspkicursed.jpg);">
+                <div align="center" class="project-label">
+                    A lot of music
+                </div>
+
+                <div align="center" class="project-summary">
+                    I make weird music.
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-wrapper">
+            <div class="project-img" style="background-image:url(images/orange.jpg);">
+                <div align="center" class="project-label">
+                    Are you a fan of oranges?
+                </div>
+
+                <div align="center" class="project-summary">
+                    Yes, I am a fan of oranges.
+                </div>
+            </div>
+        </div>
+
+        <div class="project-wrapper">
+            <div class="project-img" style="background-image:url(images/johnbruh.jpg);">
+                <div align="center" class="project-label">
+                    Mr. Monteiro
+                </div>
+
+                <div align="center" class="project-summary">
+                    Yes, I have a crush on him.
+                </div>
+            </div>
+        </div>
+        
     </div>
     
-    <div class="content-wrapper">
-        <div class="portfolio-items-wrapper">
-            
-            <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-background" style="background-image:url(images/demo.jpg);"></div>
-                <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="images/demo.jpg">
-                    </div>
-                    <div class="subtitle">Me demonstrating my prototype for Greenhat</div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
+    
     
 </body>
-
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover', () => {
-            portfolioItem.childNodes[1].classList.add('img-darken')
-        })
-        
-        portfolioItem.addEventListener('mouseout', () => {
-            portfolioItem.childNodes[1].classList.remove('img-darken')
-        })
-    })
-</script>
-
 </html>
