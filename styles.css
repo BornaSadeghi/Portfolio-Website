@@ -1,9 +1,10 @@
 /* Master styles */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
     background-color: white;
+    min-width: 400px;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
 }
 
 .name-wrapper {
-    padding-bottom: 5px;
+    padding: 8px;
     font-size: xx-large;
     font-weight: bold;
 }
@@ -27,7 +28,7 @@ a {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .project-img {
@@ -43,16 +44,16 @@ a {
     padding: 5px;
 }
 
-.project-label-wrapper {
-    background-color: rgba(0,0,0,0.5);
-}
-
 .project-title {
+    background-color: rgba(0,0,0,0.6);
+    padding-top: 4px;
+    padding-bottom: 4px;
     font-weight: bold;
     font-size: x-large;
 }
 
 .project-summary {
+    background-color: rgba(0,0,0,0.4);
     text-align: center;
-    padding: 5px;
+    padding: 8px;
 }
