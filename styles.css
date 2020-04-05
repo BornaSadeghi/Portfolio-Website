@@ -11,6 +11,30 @@ a {
     text-decoration: none;
 }
 
+/* Social media links styles */
+
+ul.social-media-list {
+    margin: 0px;
+    padding: 4px;
+    list-style: none;
+}
+
+ul.social-media-list li {
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #444444;
+    display: inline-block;
+    text-align: center;
+}
+
+ul.social-media-list i {
+    color: white;
+    font-size: 2em;
+    padding: 8px;
+}
+
 /* Navigation styles */
 
 .nav-container {
@@ -24,22 +48,6 @@ a {
     padding: 8px;
     font-size: xx-large;
     font-weight: bold;
-}
-
-.links-wrapper {
-    display: flex;
-}
-
-.link-wrapper {
-    height: 55px;
-    width: 55px;
-}
-
-.link-wrapper img {
-    color: invert();
-    padding: 5px;
-    width: 80%;
-    height: 80%;
 }
 
 /* Portfolio styles */
