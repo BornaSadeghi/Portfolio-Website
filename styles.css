@@ -50,6 +50,10 @@ ul.social-media-list i {
     font-weight: bold;
 }
 
+.name-wrapper a {
+    color: white;
+}
+
 /* Portfolio styles */
 
 .portfolio-grid {
@@ -90,16 +94,29 @@ ul.social-media-list i {
     background-color: #dedede;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 .about-wrapper img {
     width: 100%;
+    object-fit: cover;
 }
 
 .about-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
     padding: 16px 16px 16px 32px;
     width: 100%;
-
+    height: fit-content;
     font-size: larger;
+}
+
+.go-to-projects-button {
+    font-size: 1.2em;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 64px;
 }
