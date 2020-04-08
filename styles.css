@@ -93,7 +93,7 @@ ul.social-media-list i {
 .about-wrapper {
     background-color: #dedede;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
     max-height: 100%;
     overflow: hidden;
 }
