@@ -62,20 +62,20 @@ ul.social-media-list i {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .project-img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 300px;
     width: 100%;
     color: white;
 }
 
 .project-wrapper {
-    padding: 5px;
+    padding: 3px;
 }
 
 .project-title {
