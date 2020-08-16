@@ -72,10 +72,11 @@ ul.social-media-list i {
     height: 300px;
     width: 100%;
     color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.9) inset;
 }
 
 .project-wrapper {
-    padding: 3px;
+    padding: 0px;
 }
 
 .project-title {
@@ -111,6 +112,7 @@ ul.social-media-list i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 30%;
+    box-shadow: 0 0 40px rgba(0,0,0,0.9) inset;
 }
 
 .about-description {
