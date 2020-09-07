@@ -137,13 +137,11 @@ ul.social-media-list i {
     box-shadow: 0px 5px 8px rgba(0,0,0,0.4);
     border: none;
     border-radius: 4px;
-
-    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    outline: none;
 }
 
 .go-to-projects-button:hover {
     background-color: #ffffff;
     transition: 0.2s;
 }
-
-.go-to-projects-button:left
