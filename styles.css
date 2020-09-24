@@ -158,3 +158,17 @@ ul.social-media-list i {
     background-color: #ffffff;
     transition: 0.2s;
 }
+
+/* Project details styles */
+
+.project-about-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 230px rgba(0,0,0,0.9) inset;
+    width: 100%;
+    min-height: 400px;
+
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
