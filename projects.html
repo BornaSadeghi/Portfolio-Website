@@ -8,7 +8,7 @@
     <link rel="icon" href="images/favicon.jpg">
     <title>Borna Sadeghi</title>
     <script src="https://kit.fontawesome.com/40349dda9f.js" crossorigin="anonymous"></script>
-    
+    <script src="components.js"></script>
 </head>
 <body>
     
@@ -24,29 +24,25 @@
         
 
         <ul class="social-media-list">
-            <li class="nav-item">
-                <a href="https://github.com/BornaSadeghi" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
+            <nav-item-instance
+            href="https://github.com/BornaSadeghi"
+            fa-icon="fab fa-github"
+            ></nav-item-instance>
             
-            <li>
-                <a href="https://linkedin.com/in/borna-sadeghi/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
+            <nav-item-instance
+            href="https://linkedin.com/in/borna-sadeghi"
+            fa-icon="fab fa-linkedin"
+            ></nav-item-instance>
+            
+            <nav-item-instance
+            href="mailto:sadeghiborna@gmail.com"
+            fa-icon="far fa-envelope"
+            ></nav-item-instance>
 
-            <li>
-                <a href="mailto:sadeghiborna@gmail.com" target="_blank">
-                    <i class="far fa-envelope"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="documents/Resume.pdf" target="_blank">
-                    <i class="far fa-file-alt"></i>
-                </a>
-            </li>
+            <nav-item-instance
+            href="documents/Resume.pdf"
+            fa-icon="far fa-file-alt"
+            ></nav-item-instance>
 
         </ul>
         
@@ -55,7 +51,7 @@
     <h2 align="center">Check out my projects!</h2>
     
     <!-- TODO:
-        -Replace links to GitHub with project descriptions
+        -Replace links to GitHub with project pages
         -Show a gif of the project in action (project video?) when hovered
         -Javascript animations
      -->
@@ -63,307 +59,159 @@
     
     <div class="portfolio-grid">
 
-        <div class="project-wrapper">
-            <a href="https://devpost.com/software/wavelength-make-any-light-switch-hands-free" target="_blank">
-                <div class="project-img" style="background-image:url(images/wavelength.png);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Wavelength
-                        </div>
-                        <div align="center" class="project-summary">
-                            A hardware attachment for light switches that can make any regular light switch
-                            hands-free to reduce surface transmission of illnesses.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <!--
+            Project templates require name, description, href, img-url
+        -->
+        <project-instance 
+        name="Wavelength"
+        href="https://devpost.com/software/wavelength-make-any-light-switch-hands-free"
+        img-url="images/wavelength.png"
+        description="A hardware attachment for light switches that can make any regular light switch
+        hands-free to reduce surface transmission of illnesses."
+        /></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://devpost.com/software/ezml-dense" target="_blank">
-                <div class="project-img" style="background-image:url(images/ezml-dense.png);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            ezml-dense
-                        </div>
-                        <div align="center" class="project-summary">
-                            A visual tool for building dense feedforward neural networks in various machine
-                            learning libraries.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="ezml-dense"
+        href="https://devpost.com/software/ezml-dense"
+        img-url="images/ezml-dense.png"
+        description="A visual tool for building dense feedforward neural networks in various machine
+        learning libraries."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://devpost.com/software/masseyhacks-2020" target="_blank">
-                <div class="project-img" style="background-image:url(images/cognitalk.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            CogniTalk
-                        </div>
-                        <div align="center" class="project-summary">
-                            CogniTalk helps you develop your communication skills by analyzing various metrics
-                            of your speech to show areas you can improve on. Developed in a duo for MasseyHacks VI.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="CogniTalk"
+        href="https://devpost.com/software/masseyhacks-2020"
+        img-url="images/cognitalk.jpg"
+        description="CogniTalk helps you develop your communication skills by analyzing various metrics
+        of your speech to show areas you can improve on. Developed in a duo for MasseyHacks VI."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://devpost.com/software/trachio" target="_blank">
-                <div class="project-img" style="background-image:url(images/trachio.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Trachio
-                        </div>
-                        <div align="center" class="project-summary">
-                            Trachio can hear lung disorders in your breathing and report them to local health
-                            officials for rapid communication of COVID-19 symptoms and subsequent isolation.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="Trachio"
+        href="https://devpost.com/software/trachio"
+        img-url="images/trachio.jpg"
+        description="Trachio can hear lung disorders in your breathing and report them to local health
+        officials for rapid communication of COVID-19 symptoms and subsequent isolation."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://devpost.com/software/resumatch-co6bua" target="_blank">
-                <div class="project-img" style="background-image:url(images/resumatch.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            ResuMatch
-                        </div>
-                        <div align="center" class="project-summary">
-                            Upload your resume, and ResuMatch will use NLP to find tailored
-                            jobs for you with the Adzuna API. Developed with a team for hths.hacks() 2020.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="ResuMatch"
+        href="https://devpost.com/software/resumatch-co6bua"
+        img-url="images/resumatch.jpg"
+        description="Upload your resume, and ResuMatch will use NLP to find tailored
+        jobs for you with the Adzuna API. Developed with a team for hths.hacks() 2020."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://devpost.com/software/cov-vision" target="_blank">
-                <div class="project-img" style="background-image:url(images/cov-vision.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            COV-Vision
-                        </div>
-                        <div align="center" class="project-summary">
-                            A web application that simplifies doctor-patient communication for COVID-19
-                            testing, and supplies diagnostics with the help of machine learning.
-                            Developed with a team for TOHacks 2020.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="COV-Vision"
+        href="https://devpost.com/software/cov-vision"
+        img-url="images/cov-vision.jpg"
+        description="A web application that simplifies doctor-patient communication for COVID-19
+        testing, and supplies diagnostics with the help of machine learning.
+        Developed with a team for TOHacks 2020."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://devpost.com/software/covaid-bot" target="_blank">
-                <div class="project-img" style="background-image:url(images/covaid.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            CovAid
-                        </div>
-                        <div align="center" class="project-summary">
-                            A Discord chatbot that updates users with real-time information about the coronavirus
-                            pandemic in their area. Developed with a team for CovLab Global.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="CovAid"
+        href="https://devpost.com/software/covaid-bot"
+        img-url="images/covaid.jpg"
+        description="A Discord chatbot that updates users with real-time information about the coronavirus
+        pandemic in their area. Developed with a team for CovLab Global."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://devpost.com/software/easymoji" target="_blank">
-                <div class="project-img" style="background-image:url(images/easymoji.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Easymoji
-                        </div>
-                        <div align="center" class="project-summary">
-                            A program that tracks emotion from your face in order to quickly send emojis while
-                            texting. Developed with a team for Hack the North 2019.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="Easymoji"
+        href="https://devpost.com/software/easymoji"
+        img-url="images/easymoji.jpg"
+        description="A program that tracks emotion from your face in order to quickly send emojis while
+        texting. Developed with a team for Hack the North 2019."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/Spooki-Chess-Engine" target="_blank">
-                <div class="project-img" style="background-image:url(images/spooki_chess_engine.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Spooki Chess Engine
-                        </div>
-                        <div align="center" class="project-summary">
-                            A chess engine built from scratch in Java, which utilizes the classic
-                            minimax algorithm with alpha-beta pruning.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="Spooki Chess Engine"
+        href="https://github.com/BornaSadeghi/Spooki-Chess-Engine"
+        img-url="images/spooki_chess_engine.jpg"
+        description="A chess engine built from scratch in Java, which utilizes the classic
+        minimax algorithm with alpha-beta pruning."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/Spooki-TicTacToe-Engine" target="_blank">
-                <div class="project-img" style="background-image:url(images/tictactoe.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Spooki Tic-Tac-Toe Engine
-                        </div>
-                        <div align="center" class="project-summary">
-                            A tic-tac-toe engine built from scratch in Java, created to try out the minimax
-                            algorithm with alpha-beta pruning as I move on to a chess engine.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="Spooki Tic-Tac-Toe Engine"
+        href="https://github.com/BornaSadeghi/Spooki-TicTacToe-Engine"
+        img-url="images/tictactoe.jpg"
+        description="A tic-tac-toe engine built from scratch in Java, created to try out the minimax
+        algorithm with alpha-beta pruning as I move on to a chess engine."
+        ></project-instance>
         
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/Hood" target="_blank">
-                <div class="project-img" style="background-image:url(images/hood.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Hood
-                        </div>
-                        <div align="center" class="project-summary">
-                            An adventure-combat arcade game where you are a proletarian from 1984 trying to 
-                            escape a dark, imprisoning nightmare.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
         
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/Makespeare" target="_blank">
-                <div class="project-img" style="background-image:url(images/makespeare.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Makespeare
-                        </div>
-                        <div align="center" class="project-summary">
-                            A recurrent neural network that generates Shakespearean style writing at the
-                            click of a button.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="Hood"
+        href="https://github.com/BornaSadeghi/Hood"
+        img-url="images/hood.jpg"
+        description="An adventure-combat arcade game where you are a proletarian from 1984 trying to 
+        escape a dark, imprisoning nightmare."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/FlappyLearn" target="_blank">
-                <div class="project-img" style="background-image:url(images/flappylearn.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            FlappyLearn
-                        </div>
-                        <div align="center" class="project-summary">
-                            First you play Flappy Bird, and then a feedforward neural network learns how to play
-                            from you.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/Mines" target="_blank">
-                <div class="project-img" style="background-image:url(images/mines.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Mines
-                        </div>
-                        <div align="center" class="project-summary">
-                            My own recreation of Minesweeper where you can customize things like 
-                            the grid size and the number of mines.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="Makespeare"
+        href="https://github.com/BornaSadeghi/Makespeare"
+        img-url="images/makespeare.jpg"
+        description="A recurrent neural network that generates Shakespearean style writing at the
+        click of a button. Frontend built with Tkinter."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/Pathfinding-Experiment" target="_blank">
-                <div class="project-img" style="background-image:url(images/pathfinding.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Pathfinding Visualizer
-                        </div>
-                        <div align="center" class="project-summary">
-                            A visualization of various pathfinding algorithms, including Dijkstra, A*, and
-                            greedy BFS.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="FlappyLearn"
+        href="https://github.com/BornaSadeghi/FlappyLearn"
+        img-url="images/flappylearn.jpg"
+        description="First you play Flappy Bird, and then a feedforward neural network learns how to play
+        from you."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/Digit-Classifier" target="_blank">
-                <div class="project-img" style="background-image:url(images/digits.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Digit Classifier
-                        </div>
-                        <div align="center" class="project-summary">
-                            Standard handwritten digit classifier created with a feedforward neural network.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="Mines"
+        href="https://github.com/BornaSadeghi/Mines"
+        img-url="images/mines.jpg"
+        description="My own recreation of Minesweeper in Pygame, where you can customize things like 
+        the grid size and the number of mines."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/Ascent" target="_blank">
-                <div class="project-img" style="background-image:url(images/ascent.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Ascent
-                        </div>
-                        <div align="center" class="project-summary">
-                            A survival platformer-shooter arcade game, where the objective is to ascend into the sky.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="Pathfinding Visualizer"
+        href="https://github.com/BornaSadeghi/Pathfinding-Experiment"
+        img-url="images/pathfinding.jpg"
+        description="A Pygame visualization of various pathfinding algorithms, including Dijkstra, A*, and
+        greedy BFS."
+        ></project-instance>
 
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/Zombie-Apocalypse-Simulator" target="_blank">
-                <div class="project-img" style="background-image:url(images/zombiesim.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            ZombieSim
-                        </div>
-                        <div align="center" class="project-summary">
-                            A zombie apocalypse simulator where you can customize everything, from the number of
-                            humans to the chance of a zombie spawning at each iteration.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        
-        <div class="project-wrapper">
-            <a href="https://github.com/BornaSadeghi/Vinyl" target="_blank">
-                <div class="project-img" style="background-image:url(images/vinyl.jpg);">
-                    <div class="project-label-wrapper">
-                        <div align="center" class="project-title">
-                            Vinyl
-                        </div>
-                        <div align="center" class="project-summary">
-                            A 3D record player simulator created in Unity. Inspired by my passion for vinyl record collecting.
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <project-instance
+        name="Digit Classifier"
+        href="https://github.com/BornaSadeghi/Digit-Classifier"
+        img-url="images/digits.jpg"
+        description="Standard handwritten digit classifier created in Pygame with a feedforward neural network."
+        ></project-instance>
+
+        <project-instance
+        name="Ascent"
+        href="https://github.com/BornaSadeghi/Ascent"
+        img-url="images/ascent.jpg"
+        description="A survival platformer-shooter arcade game, where the objective is to ascend into the sky."
+        ></project-instance>
+
+        <project-instance
+        name="ZombieSim"
+        href="https://github.com/BornaSadeghi/Zombie-Apocalypse-Simulator"
+        img-url="images/zombiesim.jpg"
+        description="A zombie apocalypse simulator where you can customize everything, from the number of
+        humans to the chance of a zombie spawning at each iteration."
+        ></project-instance>
+
+        <project-instance
+        name="Vinyl"
+        href="https://github.com/BornaSadeghi/Vinyl"
+        img-url="images/vinyl.jpg"
+        description="A 3D record player simulator created in Unity. Inspired by my passion for vinyl record collecting."
+        ></project-instance>
         
     </div>
     
