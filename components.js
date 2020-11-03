@@ -30,5 +30,47 @@ class NavigationItem extends HTMLElement {
     }
 }
 
+class NavigationBar extends HTMLElement {
+    connectedCallback () {
+        this.innerHTML = `
+        <div class="nav-container">
+
+            <div class="name-wrapper">
+                <a href="index.html">
+                    Borna Sadeghi
+                </a>
+            </div>
+            
+
+            <ul class="social-media-list">
+                
+                <nav-item-instance
+                href="https://github.com/BornaSadeghi"
+                fa-icon="fab fa-github"
+                ></nav-item-instance>
+                
+                <nav-item-instance
+                href="https://linkedin.com/in/borna-sadeghi"
+                fa-icon="fab fa-linkedin"
+                ></nav-item-instance>
+                
+                <nav-item-instance
+                href="mailto:sadeghiborna@gmail.com"
+                fa-icon="far fa-envelope"
+                ></nav-item-instance>
+
+                <nav-item-instance
+                href="documents/Resume.pdf"
+                fa-icon="far fa-file-alt"
+                ></nav-item-instance>
+
+            </ul>
+            
+        </div>
+        `
+    }
+}
+
 customElements.define('project-instance', ProjectTemplate)
 customElements.define('nav-item-instance', NavigationItem)
+customElements.define('nav-bar', NavigationBar)
