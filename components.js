@@ -14,7 +14,7 @@ class ProjectTemplate extends HTMLElement {
                     </div>
                 </div>
             </a>
-        </div>`
+        </div>`;
     }
 }
 
@@ -26,7 +26,7 @@ class NavigationItem extends HTMLElement {
             <a href="${this.getAttribute('href')}" target="_blank">
                 <i class="${this.getAttribute('fa-icon')}"></i>
             </a>
-        </li>`
+        </li>`;
     }
 }
 
@@ -36,13 +36,13 @@ class NavigationBar extends HTMLElement {
         <div class="nav-container">
 
             <div class="name-wrapper">
-                <a href="index.html">
+                <a href="c:/users/borna/source/portfolio_site/index.html">
                     Borna Sadeghi
                 </a>
             </div>
             
 
-            <ul class="social-media-list">
+            <ul class="right-nav-items">
                 
                 <nav-item-instance
                 href="https://github.com/BornaSadeghi"
@@ -66,11 +66,10 @@ class NavigationBar extends HTMLElement {
 
             </ul>
             
-        </div>
-        `
+        </div>`;
     }
 }
 
-customElements.define('project-instance', ProjectTemplate)
-customElements.define('nav-item-instance', NavigationItem)
-customElements.define('nav-bar', NavigationBar)
+customElements.define('project-instance', ProjectTemplate);
+customElements.define('nav-item-instance', NavigationItem);
+customElements.define('nav-bar', NavigationBar);
