@@ -70,6 +70,21 @@ class NavigationBar extends HTMLElement {
     }
 }
 
+class HeadGlobal extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="c:/users/borna/source/portfolio_site/styles.css">
+        <link rel="icon" href="images/favicon.jpg">
+        <title>Borna Sadeghi - ${this.getAttribute('title')}</title>
+        <script src="https://kit.fontawesome.com/40349dda9f.js" crossorigin="anonymous"></script>
+        <script src="components.js"></script>`;
+    }
+}
+
+customElements.define('head-global', HeadGlobal);
 customElements.define('project-instance', ProjectTemplate);
 customElements.define('nav-item-instance', NavigationItem);
 customElements.define('nav-bar', NavigationBar);
