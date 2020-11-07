@@ -23,7 +23,7 @@ class NavigationItem extends HTMLElement {
     connectedCallback () {
         this.innerHTML = `
         <li class="nav-item">
-            <a href="${this.getAttribute('href')}" target="_blank">
+            <a href="${this.getAttribute('href')}">
                 <i class="${this.getAttribute('fa-icon')}"></i>
             </a>
         </li>`;
@@ -35,14 +35,19 @@ class NavigationBar extends HTMLElement {
         this.innerHTML = `
         <div class="nav-container">
 
-            <div class="name-wrapper">
-                <a href="/index.html">
-                    Borna Sadeghi
-                </a>
-            </div>
-            
+            <ul class="nav-item-group">
+                
+                <nav-item-instance
+                href="/index.html"
+                fa-icon="fas fa-home"
+                ></nav-item-instance>
 
-            <ul class="right-nav-items">
+                <span class="name-wrapper">
+                    Borna Sadeghi
+                </span>
+            </ul>
+
+            <ul class="nav-item-group">
                 
                 <nav-item-instance
                 href="https://github.com/BornaSadeghi"
