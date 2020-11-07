@@ -36,7 +36,7 @@ class NavigationBar extends HTMLElement {
         <div class="nav-container">
 
             <div class="name-wrapper">
-                <a href="c:/users/borna/source/portfolio_site/index.html">
+                <a href="/index.html">
                     Borna Sadeghi
                 </a>
             </div>
@@ -76,11 +76,11 @@ class HeadGlobal extends HTMLElement {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="c:/users/borna/source/portfolio_site/styles.css">
+        <link rel="stylesheet" href="/styles.css">
         <link rel="icon" href="images/favicon.jpg">
         <title>Borna Sadeghi - ${this.getAttribute('title')}</title>
         <script src="https://kit.fontawesome.com/40349dda9f.js" crossorigin="anonymous"></script>
-        <script src="components.js"></script>`;
+        <script src="/components.js"></script>`;
     }
 }
 
