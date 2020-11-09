@@ -170,23 +170,6 @@ ul.nav-item-group i {
     overflow: hidden;
 }
 
-.project-about-description {
-
-}
-
-/* .about-description {
-    box-sizing: border-box;
-    padding: 16px 48px 8px 48px;
-    height: 90%;
-    width: 100%;
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: x-large;
-} */
-
 .project-section {
     margin: 48px;
 }
@@ -199,7 +182,7 @@ ul.nav-item-group i {
     background-color: #cecece;
 
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
 }
 
 .doc-description {
