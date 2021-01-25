@@ -35,7 +35,7 @@ class NavigationBar extends HTMLElement {
         ></nav-item-instance>
         
         <nav-item-instance
-        href="documents/Resume.pdf"
+        href="documents/Borna_Sadeghi_Resume.pdf"
         fa-icon="far fa-file-alt"
         ></nav-item-instance>
         
