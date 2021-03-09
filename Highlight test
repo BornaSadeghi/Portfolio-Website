@@ -1,0 +1,99 @@
+Highlighting groups for various occasions
+-----------------------------------------
+SpecialKey	SpecialKey
+NonText	NonText EndOfBuffer
+Directory	Directory netrwDir
+ErrorMsg	ErrorMsg
+IncSearch	IncSearch
+Search	Search QuickFixLine
+MoreMsg	MoreMsg
+ModeMsg	ModeMsg
+LineNr	LineNr
+CursorLineNr	CursorLineNr
+Question	Question netrwSymLink
+StatusLine	StatusLine
+StatusLineNC	StatusLineNC
+VertSplit	VertSplit
+Title	Title htmlH1 htmlH2 htmlH3 htmlH4 htmlH5 htmlH6 htmlTitle
+Visual	Visual
+WarningMsg	WarningMsg netrwCoreDump vimWarn vimBufnrWarn
+WildMenu	WildMenu
+Folded	Folded netrwGray netrwCompress netrwSpecFile netrwObj netrwTags netrwTilde netrwTmp netrwBak vimFold
+FoldColumn	FoldColumn
+DiffAdd	DiffAdd
+DiffChange	DiffChange netrwData netrwLib netrwMakefile
+DiffDelete	DiffDelete
+DiffText	DiffText
+SignColumn	SignColumn
+Conceal	Conceal
+SpellBad	SpellBad
+SpellCap	SpellCap
+SpellRare	SpellRare
+SpellLocal	SpellLocal
+Pmenu	Pmenu
+PmenuSel	PmenuSel
+PmenuSbar	PmenuSbar
+PmenuThumb	PmenuThumb
+TabLine	TabLine
+TabLineSel	TabLineSel netrwMarkFile
+TabLineFill	TabLineFill
+CursorColumn	CursorColumn
+CursorLine	CursorLine
+ColorColumn	ColorColumn
+StatusLineTerm	StatusLineTerm
+StatusLineTermNC	StatusLineTermNC
+
+Syntax highlighting groups
+--------------------------
+MatchParen	MatchParen
+ToolbarLine	ToolbarLine
+ToolbarButton	ToolbarButton
+Comment	Comment netrwComment netrwHideSep netrwComma netrwHide helpExample helpCommand helpComment vimComment vimLineComment vimMtchComment pythonComment vimScriptDelim htmlCommentPart htmlComment
+	javaScriptLineComment javaScriptComment htmlCssStyleComment vbComment vbLineNumber cssComment cssVendor cssHacks
+Constant	Constant String Character Number Boolean Float netrwQHTopic helpHyperTextEntry helpConstant helpString helpCharacter helpNumber helpBoolean helpFloat helpURL vimNumber vimMark vimString
+	vimSearch vimSetString vimCommentString vimPatSepZone vimNotPatSep vimStringEnd vimStringCont vimSubstTwoBS vimMarkNumber vimPlainMark vimAddress vimLetHereDoc vimSynRegPat vimSynPatRange
+	vimInsert vimSynNotPatRange vimHiGuiRgb vimHiNmbr pythonQuotes pythonString pythonTripleQuotes pythonRawString pythonNumber htmlString htmlValue htmlPreAttr javaScriptStringD
+	javaScriptStringS javaScriptStringT javaScriptRegexpString javaScriptBoolean javaScriptCharacter vbBoolean vbConst vbDefine vbNumber vbFloat vbString cssStringQ cssStringQQ
+	cssAttributeSelector cssUnitDecorators cssValueInteger cssValueNumber cssValueLength cssValueAngle cssValueTime cssValueFrequency cssColor cssURL cssFunction cssKeyFrameProp cssAttr
+	cssContentForPagedMediaAttr cssDimensionAttr cssGridAttr cssHyerlinkAttr cssLineboxAttr cssMarginAttr cssMarqueeAttr cssPaddingAttr cssPagedMediaAttr cssRubyAttr cssSpeechAttr
+	cssTransformAttr cssRenderAttr cssGradientAttr cssCommonAttr cssAnimationAttr cssBackgroundAttr cssBorderAttr cssBoxAttr cssCascadeAttr cssFlexibleBoxAttr cssFontAttr cssMultiColumnAttr
+	cssInteractAttr cssGeneratedContentAttr cssListAttr cssPositioningAttr cssPrintAttr cssTableAttr cssTextAttr cssTransitionAttr cssUIAttr cssIEUIAttr cssAuralAttr cssMediaAttr
+	cssFontDescriptorAttr cssPseudoClassLang cssUnicodeRange htmlStyleArg
+Special	Special Tag SpecialChar Delimiter SpecialComment Debug netrwLink netrwDateSep netrwTreeBar netrwTimeSep netrwCmdSep netrwPix helpSpecial helpNotVi helpSpecialChar helpTag helpDelimiter
+	helpSpecialComment helpDebug vimRegister vimCmplxRepeat vimNotation vimCtrlChar vimContinue vimParenSep vimSep vimFuncSID vimUserAttrbCmpltFunc vimPatSep vimPatSepZ vimPatSepR vimSubstSubstr
+	vimSubstDelim vimSubstFlags vimPlainRegister vimLetHereDocStart vimLetHereDocStop vimMapModKey vimBracket vimMapMod vimMenuMod vimGroupSpecial vimIskSep pythonEscape pythonDoctest
+	vimSynOption vimSynContains vimSynKeyContainedin vimSynNextgroup vimGroupAdd vimGroupRem vimSynKeyOpt vimSynMtchOpt vimSynRegOpt vimSynMtchGrp htmlSpecialChar htmlCssDefinition javaScript
+	javaScriptExpression htmlEvent javaScriptSpecial javaScriptEmbed javaScriptSpecialCharacter javaScriptDebug htmlEventSQ htmlEventDQ vbEvents cssSelectorOp cssSelectorOp2 cssUnicodeEscape
+	cssImportant cssCustomProp cssAttrComma cssMediaType cssFontDescriptor htmlSpecial
+Identifier	Identifier Function netrwVersion netrwClassify netrwHelpCmd helpHyperTextJump helpVim helpIdentifier helpFunction vimFuncName vimVar vimFBVar vimSpecFile vimFuncVar vimSpecFileMod
+	pythonFunction pythonDecoratorName pythonBuiltin vimKeyCode htmlEndTag htmlTag javaScriptIdentifier javaScriptFunction javaScriptBraces htmlScriptTag vbFunction vbIdentifier cssClassNameDot
+	cssClassName cssIdentifier cssFunctionName cssFunctionComma cssBraces
+Statement	Statement Conditional Repeat Label Operator Keyword Exception netrwHidePat netrwList helpHeadline helpStatement helpConditional helpRepeat helpLabel helpOperator helpKeyword helpException
+	vimCommand vimSubst vimAutoCmd vimLet vimMap vimSyntax vimBehave vimBehaveModel vimFTCmd vimNotFunc vimOper vimAugroupKey vimFuncKey vimAbb vimEchoHL vimHighlight vimNorm vimUnmap
+	vimUserCommand vimSubst1 vimSetSep vimMapBang vimHiClear vimSearchDelim pythonStatement pythonConditional pythonRepeat pythonOperator pythonException pythonAsync vimAuHighlight vimAutoSet
+	vimCondHL vimElseif vimKeyword vimStatement htmlSpecialTagName javaScriptConditional javaScriptRepeat javaScriptBranch javaScriptOperator javaScriptStatement javaScriptNull javaScriptLabel
+	javaScriptException javaScriptMessage javaScriptGlobal javaScriptMember javaScriptDeprecated javaScriptReserved javaScriptConstant vbConditional vbOperator vbRepeat vbStatement vbKeyword
+	cssTagName cssAtRuleLogical htmlStatement htmlTagName
+PreProc	PreProc Include Define Macro PreCondit netrwExe helpSectionDelim helpHeader helpPreProc helpInclude helpDefine helpMacro helpPreCondit vimOption vimEnvvar vimUserAttrbKey vimSetMod
+	vimMenuName vimMenuNameMore vimHiAttrib vimFgBgAttrib vimCommentTitle pythonInclude pythonDecorator pythonDoctestValue vimAutoCmdOpt vimHLMod htmlPreStmt htmlPreProc htmlPreProcAttrName
+	htmlHead vbMethods cssAtRule cssPseudoClassId cssAtKeyword cssPageMarginProp cssPagePseudo
+Type	Type StorageClass Structure Typedef helpOption helpType helpStorageClass helpStructure helpTypedef vimAutoEvent vimGroup vimHLGroup vimPattern vimEchoHLNone vimSynCase vimGroupName vimSynReg
+	vimSyncC vimSyncGroupName vimSyncKey vimSyncGroup vimSyncNone vimHiGroup vimHiTerm vimHiCTerm vimHiStartStop vimHiCtermFgBg vimHiGui vimHiGuiFont vimHiGuiFgBg pythonExceptions vimSpecial
+	vimUserAttrb vimUserAttrbCmplt vimSynType vimFTOption htmlArg javaScriptType vbTypes vbTypeSpecifier cssProp cssContentForPagedMediaProp cssLineboxProp cssMarqueeProp cssPagedMediaProp
+	cssPrintProp cssRubyProp cssSpeechProp cssRenderProp cssAnimationProp cssBackgroundProp cssBorderProp cssBoxProp cssCascadeProp cssColorProp cssDimensionProp cssFlexibleBoxProp cssFontProp
+	cssMultiColumnProp cssInteractProp cssGeneratedContentProp cssGridProp cssHyerlinkProp cssListProp cssPositioningProp cssTableProp cssTextProp cssTransformProp cssTransitionProp cssUIProp
+	cssIEUIProp cssAuralProp cssMobileTextProp cssMediaProp cssPageProp cssFontDescriptorProp
+Underlined	Underlined helpUnderlined htmlLink
+Ignore	Ignore helpIgnore helpBar helpStar helpBacktick
+Error	Error helpError vimOperError vimUserAttrbError vimUserCmdError vimElseIfErr vimSynError vimSyncError vimError vimKeyCodeError vimErrSetting vimBehaveError vimFTError vimFunctionError
+	vimAugroupError vimFunc vimPatSepErr vimSubstFlagErr vimCollClassErr vimMapModErr vimSynCaseError vimHiCtermError vimHiAttribList vimHiKeyError vimEmbedError htmlError htmlTagError
+	htmlCommentError htmlPreError htmlPreProcAttrError javaScriptError javaScrParenError vbError cssError cssBraceError cssDeprecated
+Todo	Todo helpNote helpWarning helpDeprecated helpTodo vimTodo pythonTodo javaScriptCommentTodo vbTodo
+htmlStrike	htmlStrike
+htmlBoldUnderline	htmlBoldUnderline htmlUnderlineBold
+htmlBoldItalic	htmlBoldItalic htmlItalicBold
+htmlBold	htmlBold
+htmlBoldUnderlineItalic	htmlBoldUnderlineItalic htmlBoldItalicUnderline htmlUnderlineBoldItalic htmlUnderlineItalicBold htmlItalicBoldUnderline htmlItalicUnderlineBold
+htmlUnderlineItalic	htmlUnderlineItalic htmlItalicUnderline
+htmlUnderline	htmlUnderline
+htmlItalic	htmlItalic
