@@ -25,7 +25,7 @@ class NavigationBar extends HTMLElement {
         ></nav-item-instance>
         
         <nav-item-instance
-        href="https://linkedin.com/in/borna-sadeghi"
+        href="https://linkedin.com/in/bornasadeghi"
         fa-icon="fab fa-linkedin"
         ></nav-item-instance>
         
